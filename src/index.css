@@ -1,0 +1,134 @@
+@import "tailwindcss";
+@font-face {
+  font-family: thisismyfont;
+  src: url("./src/assets/fonts/SpaceMono-Regular.ttf");
+}
+@font-face {
+  font-family: zainfont;
+  src: url("./assets/fonts/Zain-Bold.ttf");
+}
+
+p,
+button,
+div {
+  font-family: thisismyfont;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: zainfont;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 
+* {
+  border: 0 solid transparent;
+} */
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  line-height: 1;
+  text-rendering: optimizeSpeed;
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  line-height: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+}
+
+textarea {
+  vertical-align: top;
+
+  overflow: auto;
+}
+
+/* [type="checkbox"],
+[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &:focus {
+    outline: 0;
+  }
+} */
+/* 
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+} */
